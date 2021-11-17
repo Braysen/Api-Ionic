@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Project Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <div *ngIf="character">
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <ion-card-title>{{character.descripcion}}</ion-card-title>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <p>Imagen Fondo</p>
+              <img [src]="'https://web.ecoplaza.com.pe/storage/'+character.img_fondo" alt="">
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <p>Imagen Interna</p>
+              <img [src]="'https://web.ecoplaza.com.pe/storage/'+character.img_interna" alt="">
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

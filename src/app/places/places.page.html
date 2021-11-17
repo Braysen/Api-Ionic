@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Projects</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeMd="4" offsetMd="4">
+          <ion-list>
+            <ion-item *ngFor="let data_info of data" [routerLink]="['/places/',data_info.idproyecto]">
+              <ion-avatar slot="start">
+                <ion-img [src]="'https://web.ecoplaza.com.pe/storage/'+data_info.img_fondo">
+                </ion-img>
+              </ion-avatar>
+              <ion-label>{{data_info.descripcion}}</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

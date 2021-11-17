@@ -1,0 +1,35 @@
+ion-header{
+    ion-toolbar{
+        --background: #255e29;
+        --color: #fcfcfc;
+        background: #255e29;
+    }
+}
+
+ion-content{
+    ion-card{
+        background: #fff2e2;
+        --background: #fff2e2;
+    }
+    ion-card-title{
+        color: #010101;
+        --color: #010101;
+    }
+    p{
+        color: #6dccb0;
+        --color: #6dccb0;
+    }
+    ion-row{
+        div{
+            ion-card{
+                ion-card-content{
+                    ion-card-title{
+                        text-transform: uppercase;
+                        color: #6dccb0;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

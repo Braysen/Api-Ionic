@@ -1,0 +1,7 @@
+{
+    "/rutaBraysen": {
+        "target": "https://web.ecoplaza.com.pe",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

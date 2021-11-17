@@ -1,0 +1,23 @@
+ion-header{
+    ion-toolbar{
+        --background: #255e29;
+        background: #255e29;
+    }
+}
+ion-content{
+    background: white;
+    ion-list{
+        background: white!important;
+        ion-item{
+            background: white;
+            --background: white;
+            color: #010101;
+        }
+        ion-item:hover{
+            color: #010101;
+        }
+        ion-item:focus{
+            color: #010101;
+        }
+    }
+}
